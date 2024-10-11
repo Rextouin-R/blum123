@@ -78,17 +78,7 @@ class Blum:
     def load_queries(self, file_path):
         with open(file_path, 'r') as file:
             return [line.strip() for line in file if line.strip()]
-
-    def print_banner():
-    os.system('cls' if os.name == 'nt' else 'clear')
-    print(crayons.cyan('=============================================='))
-    print(crayons.cyan('         NOT PIXEL BOT | AIRDROP UNLIMITED    '))
-    print(crayons.cyan('=============================================='))
-    print(crayons.cyan('Telegram Channel : @airdrop_unlimited          '))
-    print(crayons.cyan('Telegram Chat   : @unlimited_discussion        '))
-    print(crayons.cyan('=============================================='))
-
-
+            
     async def generate_token(self, query: str):
         url = 'https://user-domain.blum.codes/api/v1/auth/provider/PROVIDER_TELEGRAM_MINI_APP'
         data = json.dumps({'query':query,'referralToken':'ZaPCLmyAt5'})
@@ -566,6 +556,11 @@ if __name__ == '__main__':
 
         queries_files = [f for f in os.listdir() if f.startswith('queries-') and f.endswith('.txt')]
         queries_files.sort(key=lambda x: int(re.findall(r'\d+', x)[0]) if re.findall(r'\d+', x) else 0)
+
+        blum.print_timestamp(
+            f"{Fore.MAGENTA + Style.BRIGHT}{Style.RESET_ALL}"
+            
+        )
 
         blum.print_timestamp(
             f"{Fore.MAGENTA + Style.BRIGHT}[ 1 ]{Style.RESET_ALL}"
