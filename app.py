@@ -546,7 +546,8 @@ class Blum:
                 self.print_timestamp(f"{Fore.RED + Style.BRIGHT}[ {str(e)} ]{Style.RESET_ALL}")
                 continue
 
-def print_banner():
+if __name__ == '__main__':
+    def print_banner():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(crayons.cyan('=============================================='))
     print(crayons.cyan('         NOT PIXEL BOT | AIRDROP UNLIMITED    '))
@@ -554,8 +555,6 @@ def print_banner():
     print(crayons.cyan('Telegram Channel : @airdrop_unlimited          '))
     print(crayons.cyan('Telegram Chat   : @unlimited_discussion        '))
     print(crayons.cyan('=============================================='))
-
-if __name__ == '__main__':
     try:
         if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
             asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
