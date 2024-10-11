@@ -577,7 +577,7 @@ if __name__ == '__main__':
 
         blum.print_timestamp(
             f"{Fore.MAGENTA + Style.BRIGHT}[======]{Style.RESET_ALL}"
-            f"{Fore.WHITE + Style.BRIGHT}{Style.RESET_ALL}"
+            f"{Fore.WHITE + Style.BRIGHT}   {Style.RESET_ALL}"
             f"{Fore.CYAN + Style.BRIGHT}[=============================]{Style.RESET_ALL}"
         )
 
