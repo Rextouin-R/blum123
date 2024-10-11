@@ -79,6 +79,16 @@ class Blum:
         with open(file_path, 'r') as file:
             return [line.strip() for line in file if line.strip()]
 
+    def print_banner():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(crayons.cyan('=============================================='))
+    print(crayons.cyan('         NOT PIXEL BOT | AIRDROP UNLIMITED    '))
+    print(crayons.cyan('=============================================='))
+    print(crayons.cyan('Telegram Channel : @airdrop_unlimited          '))
+    print(crayons.cyan('Telegram Chat   : @unlimited_discussion        '))
+    print(crayons.cyan('=============================================='))
+
+
     async def generate_token(self, query: str):
         url = 'https://user-domain.blum.codes/api/v1/auth/provider/PROVIDER_TELEGRAM_MINI_APP'
         data = json.dumps({'query':query,'referralToken':'ZaPCLmyAt5'})
