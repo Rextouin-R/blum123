@@ -547,14 +547,6 @@ class Blum:
                 continue
 
 if __name__ == '__main__':
-    def print_banner():
-    os.system('cls' if os.name == 'nt' else 'clear')
-    print(crayons.cyan('=============================================='))
-    print(crayons.cyan('         NOT PIXEL BOT | AIRDROP UNLIMITED    '))
-    print(crayons.cyan('=============================================='))
-    print(crayons.cyan('Telegram Channel : @airdrop_unlimited          '))
-    print(crayons.cyan('Telegram Chat   : @unlimited_discussion        '))
-    print(crayons.cyan('=============================================='))
     try:
         if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
             asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
