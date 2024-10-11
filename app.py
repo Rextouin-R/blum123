@@ -558,15 +558,9 @@ if __name__ == '__main__':
         queries_files.sort(key=lambda x: int(re.findall(r'\d+', x)[0]) if re.findall(r'\d+', x) else 0)
 
         blum.print_timestamp(
-            f"{Fore.MAGENTA + Style.BRIGHT}
-            ==============================================
-                  NOT PIXEL BOT | AIRDROP UNLIMITED    
-            ==============================================
-                Telegram Channel : @airdrop_unlimited          
-               Telegram Chat   : @unlimited_discussion        
-            ==============================================
-            {Style.RESET_ALL}"
-            
+            f"{Fore.MAGENTA + Style.BRIGHT}[ JOIN ]{Style.RESET_ALL}"
+            f"{Fore.WHITE + Style.BRIGHT} | {Style.RESET_ALL}"
+            f"{Fore.CYAN + Style.BRIGHT}[ AIRDROP_UNLIMITED ]{Style.RESET_ALL}"
         )
 
         blum.print_timestamp(
