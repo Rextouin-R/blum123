@@ -558,6 +558,12 @@ if __name__ == '__main__':
         queries_files.sort(key=lambda x: int(re.findall(r'\d+', x)[0]) if re.findall(r'\d+', x) else 0)
 
         blum.print_timestamp(
+            f"{Fore.MAGENTA + Style.BRIGHT}[======]{Style.RESET_ALL}"
+            f"{Fore.WHITE + Style.BRIGHT}   {Style.RESET_ALL}"
+            f"{Fore.CYAN + Style.BRIGHT}[=============================]{Style.RESET_ALL}"
+        )
+
+        blum.print_timestamp(
             f"{Fore.MAGENTA + Style.BRIGHT}[ ===> ]{Style.RESET_ALL}"
             f"{Fore.WHITE + Style.BRIGHT} | {Style.RESET_ALL}"
             f"{Fore.CYAN + Style.BRIGHT}[         REXTOUIN_RR         ]{Style.RESET_ALL}"
@@ -579,6 +585,12 @@ if __name__ == '__main__':
             f"{Fore.MAGENTA + Style.BRIGHT}[======]{Style.RESET_ALL}"
             f"{Fore.WHITE + Style.BRIGHT}   {Style.RESET_ALL}"
             f"{Fore.CYAN + Style.BRIGHT}[=============================]{Style.RESET_ALL}"
+        )
+
+        blum.print_timestamp(
+            f"{Fore.MAGENTA + Style.BRIGHT}[      ]{Style.RESET_ALL}"
+            f"{Fore.WHITE + Style.BRIGHT}   {Style.RESET_ALL}"
+            f"{Fore.CYAN + Style.BRIGHT}[                             ]{Style.RESET_ALL}"
         )
 
         blum.print_timestamp(
