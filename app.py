@@ -551,9 +551,13 @@ if __name__ == '__main__':
         if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
             asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
+        while (sekarang < nanti) {
+            console.log(figlet.textSync('U n l i m i t e d', {font: "Ogre"}), '\n')
+        } 
+
         init(autoreset=True)
         blum = Blum()
-
+        
         queries_files = [f for f in os.listdir() if f.startswith('queries-') and f.endswith('.txt')]
         queries_files.sort(key=lambda x: int(re.findall(r'\d+', x)[0]) if re.findall(r'\d+', x) else 0)
 
