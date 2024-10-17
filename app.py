@@ -551,9 +551,9 @@ if __name__ == '__main__':
         if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
             asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-        
+        blum.print_timestamp(
             console.log(figlet.textSync('U n l i m i t e d', {font: "Ogre"}), '\n')
-        
+        ) 
 
         init(autoreset=True)
         blum = Blum()
