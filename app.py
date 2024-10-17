@@ -559,7 +559,7 @@ if __name__ == '__main__':
 
         blum.print_timestamp(
             
-            f"{Fore.WHITE + Style.textSync} U n l i m i t e d {Style.RESET_ALL}"
+            f"{Fore.WHITE + Style.MATRIX} U n l i m i t e d {Style.RESET_ALL}"
         ) 
 
         blum.print_timestamp(
