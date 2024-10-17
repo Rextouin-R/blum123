@@ -558,7 +558,7 @@ if __name__ == '__main__':
         queries_files.sort(key=lambda x: int(re.findall(r'\d+', x)[0]) if re.findall(r'\d+', x) else 0)
 
         blum.print_timestamp(
-            console.log(figlet.textSync('U n l i m i t e d', {font: "Ogre"}), '\n')
+            f"{(figlet.textSync('U n l i m i t e d', {font: "Ogre"}), '\n')"
         ) 
 
         blum.print_timestamp(
